@@ -8,11 +8,13 @@ function App() {
   return (
     <>
       <Header />
-      <Main className="gap-4">
-        <ChamberTable />
-        <div className="flex flex-col gap-4">
-          <ExportCard />
-          <DegasTable />
+      <Main className="gap-4 ">
+        <div className="flex gap-4">
+          <ChamberTable />
+          <div className="flex flex-col gap-4">
+            <ExportCard />
+            <DegasTable />
+          </div>
         </div>
       </Main>
     </>
