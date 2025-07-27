@@ -21,7 +21,7 @@ const ExportCard = () => {
     <Card>
       <CardHeader className="flex justify-between items-center">
         <CardTitle>Control Room Worksheet</CardTitle>
-        <CardAction className="flex justify-between gap-4">
+        <CardAction className="flex justify-between gap-4  w-58">
           <div className="flex items-center space-x-2">
             <Switch id="shift-change" onCheckedChange={handleShiftChange} />
             <Label htmlFor="shift-change">
