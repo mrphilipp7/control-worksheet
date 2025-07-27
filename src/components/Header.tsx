@@ -1,11 +1,7 @@
 import { Button } from './ui/button';
-import {
-  ArrowBigLeft,
-  CircleQuestionMark,
-  Home,
-  MoonStarIcon,
-} from 'lucide-react';
+import { ArrowBigLeft, CircleQuestionMark, Home } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import { ModeToggle } from './ModeToggle';
 
 const Header = () => {
   return (
@@ -14,7 +10,7 @@ const Header = () => {
         <div className="flex gap-2">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button size={'icon'} variant={'ghost'}>
+              <Button size={'icon'} variant={'outline'}>
                 <ArrowBigLeft />
               </Button>
             </TooltipTrigger>
@@ -37,15 +33,13 @@ const Header = () => {
         <div className="flex gap-2">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant={'secondary'} size="icon">
+              <Button variant={'outline'} size="icon">
                 <CircleQuestionMark />
               </Button>
             </TooltipTrigger>
             <TooltipContent>Help</TooltipContent>
           </Tooltip>
-          <Button variant={'ghost'} size={'icon'}>
-            <MoonStarIcon />
-          </Button>
+          <ModeToggle />
         </div>
       </div>
     </header>
